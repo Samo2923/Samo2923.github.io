@@ -1,0 +1,196 @@
+
+.month{
+    width: 315px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.day{
+    width: 23px;
+    padding: 5px;
+    margin: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.year{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+h1{
+    width: 100%;
+}
+
+.day0{
+    width: 25px;
+    padding: 0px 4px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    font-size: 25px;
+    font-family: 'Cormorant', serif;
+}
+
+.bg {
+    background: rgb(237, 0, 0);
+    color: #210354;
+    /* border: 1px solid #1403ff; */
+    
+}
+
+.bga {
+    background: #73c7ee;
+}
+.bga:hover::before{
+    content: "Շնորհավոր ծնունդդ ախպերս";
+    position: absolute;
+    padding: 3px;
+    background: #2e3d33;
+    color: #ffff;
+    border-radius: 30% 0;
+}
+
+.rot{
+    margin: 20px 0;
+    border-radius: 60px;
+    padding: 3px;
+    /* border: 1px solid #ff0000; */
+    cursor: pointer;
+}
+.rot select{
+background: #a1d0dd;
+display: block;
+border-radius: 3px;
+padding: 0 12px;
+color: white;
+position: relative;
+text-decoration: none;
+height: 27px;
+font: 12px /27px"PT Sans";
+box-shadow: 0px 3px #7fafbc, 8px 8px 5px rgba(0, 0, 0, 0.3);
+transition: all 0.3s ease;
+cursor: pointer;
+}
+.rot select:hover{
+background: #bae0ea;
+}
+.rot select:active{
+    cursor: pointer;
+    background: #bae0ea;
+    bottom: -3px;
+    box-shadow: 0px 0px #7fafbc, 0px 1px 3px rgba(0,0,0,0.3);
+}
+.rot select{
+    cursor: pointer;
+}
+
+
+@keyframes spin3d{
+    from{
+        transform: rotate3d(.5,.5,.5,360deg);
+    }
+    to{
+        transform: rotate3d(0deg);
+    }
+}
+body{
+    min-height: 100vh;
+    background-color: #1d2630;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.spinner-box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.leo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.e4-orbit{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #000000a5;
+    -webkit-animation: spin3d 9s linear .4s infinite;
+}
+.e3-orbit{
+    width: 210px;
+    height: 210px;
+    border: 1px solid #3cff00a5;
+    -webkit-animation: spin3d 8s linear .0s infinite;
+}
+.blue-orbit{
+    width: 165px;
+    height: 165px;
+    border: 1px solid #91daffa5;
+    -webkit-animation: spin3d 7s linear .2s infinite;
+}
+.green-orbit{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #91ffbfa5;
+    -webkit-animation: spin3d 6s linear 0s infinite;
+}
+.red-orbit{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ffca91a5;
+    -webkit-animation: spin3d 5s linear 0s infinite;
+}
+.e1-orbit{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #072311;
+    -webkit-animation: spin3d 4s linear 0s infinite;
+}
+.e2-orbit{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #5b6d61;
+    -webkit-animation: spin3d 3s linear 0s infinite;
+}
+.e-orbit{
+    width: 175px;
+    height: 175px;
+    border: 2px solid #4b9c69;
+    -webkit-animation: spin3d 2s linear 0s infinite;
+}
+.ee-orbit{
+    width: 195px;
+    height: 195px;
+    border: 2px solid #a15c5c;
+    -webkit-animation: spin3d 1s linear 0s infinite;
+}
+.white-orbit{
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ffffff;
+    -webkit-animation: spin3d 30s linear 0s infinite;
+}
+.w1{
+    transform: rotate3d(1,1,1,90deg);
+}
+.w2{
+    transform: rotate3d(1,2,5,90deg);
+}
